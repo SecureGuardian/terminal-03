@@ -1,0 +1,4 @@
+   26  grep -i "JavaScript" prenoms.csv | grep -i "Toulouse" > javascript_toulouse.csv
+   28  grep -i "JavaScript" prenoms.csv | grep -i "Biarritz" > javascript_biarritz.csv
+   31  cat javascript_toulouse.csv javascript_biarritz.csv > javascript_biarritz_toulouse.csv
+   35  history | grep -e 'grep -i "JavaScript" prenoms.csv | grep -i "Toulouse" > javascript_toulouse.csv' -e 'grep -i "JavaScript" prenoms.csv | grep -i "Biarritz" > javascript_biarritz.csv' -e 'cat javascript_toulouse.csv javascript_biarritz.csv > javascript_biarritz_toulouse.csv' > history.txt
